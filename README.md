@@ -15,7 +15,7 @@ The backend is **deployed on Google Cloud Compute Engine**, integrated with **Go
 Below is the system architecture illustrating the cloud components:
 
 <p align="center">
-  <img src="./Egglyze-diagram.jpg" alt="Architecture Diagram" width="800">
+  <img src="./Egglyze-diagram.jpg" alt="Architecture Diagram">
 </p>
 
 ---
