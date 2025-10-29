@@ -1,19 +1,69 @@
+# 🥚 Egglyze: Backend Flask API
 
-# Backend Flask API
-1. Clone this repository.
-2. Navigate to your project directory.
-3. Create a virtual environment. <br>
-   `python -m venv venv`
-4. Activate the virtual environment. <br>
-   `.\venv\Scripts\activate` (windows) <br>
-   `source venv/bin/activate` (linux/macOS)
-6. Install Flask and dependencies. <br>
-   `pip install flask` <br>
-   `pip install tensorflow requests werkzeug`
-7. Open new terminal and run the following commands on each terminal. <br>
-   `python backend_API.py` <br>
-   `python test_backend.py` (opsional, for testing the API. If you decide to use postman, no need to run this script)
+## 🧠 Overview
 
-NB: 
-1. test_backend.py is used to test the backend API, actually you can also use postman to test it.
-2. In this project, We use Google Cloud Compute Engine to host the backend API. 
+This project focuses on building a Flask-based backend API that serves as a bridge between a machine learning (ML) model and a mobile application.
+It enables real-time egg quality prediction based on shell analysis.
+
+The backend is deployed on Google Cloud Compute Engine, integrated with Google Cloud Firestore for data management, and tested using Postman API.
+
+## ☁️ Cloud Architecture
+
+Below is the system architecture illustrating the cloud components and API interaction flow:
+(!egglyze-diagram.png)
+
+## ⚙️ Tech Stack
+
+Backend Framework: Flask (Python)
+
+Cloud Platform: Google Cloud Compute Engine
+
+Database: Google Cloud Firestore
+
+API Testing: Postman
+
+Libraries: TensorFlow, Requests, Werkzeug
+
+## 🚀 Getting Started
+
+Follow these steps to set up and run the backend locally:
+
+1. Clone this repository
+git clone https://github.com/yourusername/egglyze-backend.git
+cd egglyze-backend
+
+2. Create a virtual environment
+python -m venv venv
+
+3. Activate the virtual environment
+
+Windows:
+
+.\venv\Scripts\activate
+
+
+Linux / macOS:
+
+source venv/bin/activate
+
+4. Install dependencies
+pip install flask tensorflow requests werkzeug
+
+5. Run the backend API
+python backend_API.py
+
+6. (Optional) Test the API
+
+You can test the API using:
+
+Postman, or
+
+Run the provided test script:
+
+python test_backend.py
+
+## 🧩 Notes
+
+test_backend.py is an optional script for local API testing.
+
+For production, the backend is hosted on Google Cloud Compute Engine, ensuring scalability and real-time performance.
